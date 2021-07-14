@@ -1,0 +1,41 @@
+TO SET UP DATABASE VIA STRAPI:
+
+-In Terminal
+	- Create directory and navigate into it.
+	- Check node & npm installed:
+		npm -v
+		node -v
+	- Create a strapi app:
+		npx create-strapi-app [Name Of Directory Here] --quickstart
+	- Webpack builds files as needed... Be patient.
+	- A wild server appears at localhost:1337!
+
+-In localhost:1337
+	- Click Open the administration button.
+	- Sign in to get started.
+	- A wild dashboard appears!
+
+-Content Types Builder
+	- Click Create a new collection type
+		- Type [Display Name Here] (singular)
+		- Add appropriate fields for data (Text, number, email, etc)
+	- Click Save
+
+-Collection Types
+	- Click appropriate collection type
+	- Click Add New [Display Name Here]
+		- Enter all required fields
+		- Click Save
+		- Click Publish
+	- Repeat as needed
+
+-Settings
+	- Users & Permissions Plugin
+		- Click Roles
+		- Click Public
+	- Permissions:
+		- Checkbox for all allowed actions under application header.
+	- Click Save
+
+- See data live at localhost:1337/[collection-type-name-here]
+
